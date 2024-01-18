@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pilih Barang</title>
+    <link rel="stylesheet" href="/main/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pilih Barang</h1>
+      <label for="barang">Pilih Barang:</label>
+      <select id="barang">
+        <!-- Nama barang dan harga akan diisi oleh JavaScript -->
+      </select>
+
+      <label for="qty">Qty:</label>
+      <input type="number" id="qty" />
+
+      <button onclick="addItem()">Tambah Barang</button>
+
+      <table id="tabelBarang">
+        <thead>
+          <tr>
+            <th>Nama Barang</th>
+            <th>Qty</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Tabel akan diisi oleh JavaScript -->
+        </tbody>
+      </table>
+
+      <br />
+      <br />
+
+      <label for="idKaryawan">ID Karyawan:</label>
+      <input type="text" id="idKaryawan" />
+      <button onclick="validateKaryawan()">Validasi</button>
+
+      <input type="text" id="bayar" placeholder="Rp 0" />
+      <button onclick="checkPayment()">Uang Bayar</button>
+
+      <table id="tabelTransaksi">
+        <thead>
+          <tr>
+            <th>Total Harga</th>
+            <th>Diskon</th>
+            <th>Total Belanja</th>
+            <th>Uang Bayar</th>
+            <th>Kembalian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Tabel akan diisi oleh JavaScript -->
+        </tbody>
+      </table>
+      <br />
+
+      <table id="detailTransaksi">
+        <thead>
+          <tr>
+            <th>Nama Barang</th>
+            <th>Qty</th>
+            <th>Harga</th>
+            <th>Kembalian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Tabel akan diisi oleh JavaScript -->
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <div class="save-container">
+      <button class="save" onclick="save()">Simpan</button>
+    </div>
+
+    <script src="/main/js/script.js"></script>
+  </body>
+</html>
